@@ -1,0 +1,27 @@
+package ExceptionHandling;
+
+public class NestedDemo {
+
+	private void process(int num) {
+		try {
+			try {
+				if (num > 7) {
+					throw new IllegalArgumentException("number should not be greater than 7");
+				}
+				try {
+					System.out.println("In inner try block");
+				} catch (Exception e) {
+					// TODO: handle exception
+				}
+			} catch (Exception e) {
+
+			}
+		} catch (Exception e) {
+
+		}
+	}
+
+	public static void main(String[] args) {
+
+	}
+}

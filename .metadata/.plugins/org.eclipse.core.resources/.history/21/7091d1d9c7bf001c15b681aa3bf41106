@@ -1,0 +1,29 @@
+package Assesment;
+
+import java.util.List;
+
+class State{
+	String state;
+	
+	public State(String state) {
+		this.state = state;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+	
+	
+}
+class Country{
+	String name;
+	List<State> stateList;
+}
+
+public class DisplayState {
+
+}

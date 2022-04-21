@@ -1,0 +1,38 @@
+package Multithreading;
+
+class MyThread implements Runnable {
+
+	// to stop the thread
+	private boolean exit;
+
+	private String threadName;
+	Thread t;
+
+	public MyThread(String threadName) {
+		this.threadName = threadName;
+		t = new Thread(this.threadName);
+		System.out.println("New thread: " + t);
+		exit = false;
+		t.start(); // Starting the thread
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		int i = 0;
+		while (!exit) {
+			System.out.println(name + ": " + i);
+			i++;
+			try {
+				Thread.sleep(100);
+			} catch (InterruptedException e) {
+				System.out.println("Caught:" + e);
+			}
+		}
+	}
+
+}
+
+public class StopThread {
+
+}

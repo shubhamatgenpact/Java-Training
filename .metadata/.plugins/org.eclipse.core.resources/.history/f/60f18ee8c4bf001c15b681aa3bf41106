@@ -1,0 +1,35 @@
+package Assesment;
+
+class UserMainCode {
+
+	public static boolean checkPassword(String password) {
+
+		// valid password should satisfy following rules
+		// minimum 8 char length
+		// should have one lower case , one upper case , one digit and one special
+		// character
+
+		for (int i = 0; i < password.length(); i++) {
+			char ch = password.charAt(i);
+			boolean flag = false;
+
+			if (Character.isLowerCase(ch)) {
+				flag = true;
+			} else if (Character.isUpperCase(ch)) {
+				flag = true;
+			} else if (Character.isDigit(ch)) {
+				flag = true;
+			} else if (ch == '!' || ch == '@' || ch == '#' || ch == '$' || ch == '%' || ch == '^') {
+				flag = true;
+			}
+			return flag;
+		}
+
+	}
+}
+
+public class PasswordValidation{
+	public static void main(String[] args) {
+		
+	}
+}

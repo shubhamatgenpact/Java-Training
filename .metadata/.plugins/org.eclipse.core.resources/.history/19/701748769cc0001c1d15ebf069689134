@@ -1,0 +1,21 @@
+package Multithreading;
+
+class MyThread implements Runnable {
+
+	private String threadName;
+	Thread t;
+	public MyThread(String threadName) {
+		this.threadName = threadName;
+		t = new Thread(this.threadName);
+	}
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+public class StopThread {
+
+}

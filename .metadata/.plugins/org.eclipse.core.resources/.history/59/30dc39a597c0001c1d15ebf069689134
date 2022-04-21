@@ -1,0 +1,29 @@
+package Multithreading;
+
+
+class PreTest implements Runnable{
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		for(int i=1;i<=5;i++) {
+			System.out.println("First Child "+i);
+		}
+		System.out.println("First Child Existed");
+		
+	}
+	
+}
+
+class PostTest implements Runnable{
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
+public class FinalTest {
+
+}

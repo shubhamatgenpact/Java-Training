@@ -1,0 +1,18 @@
+package Map;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class App {
+	public static void main(String[] args) {
+		Map<Integer, String> hmap = new HashMap<Integer, String>();
+
+		System.out.println(hmap.isEmpty());
+
+		hmap.put(1, "Monday");
+		hmap.put(2, "Wednesday");
+		hmap.put(3, "Black");
+		hmap.put(4, "Red");
+		hmap.put(2, "Pink");
+	}
+}

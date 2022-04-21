@@ -1,0 +1,27 @@
+package Multithreading;
+
+public class ThreadJoin implements Runnable {
+
+	@Override
+	public void run() {
+		
+	}
+
+	public static void main(String[] args) {
+			ThreadJoin threadJoin = new ThreadJoin();
+			Thread thread = new Thread();
+			
+			thread.start();
+			
+			try {
+				thread.join(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			System.out.println("Main Thread is Ending...");
+			
+	}
+
+}

@@ -1,0 +1,30 @@
+package Assesment;
+
+import java.util.Scanner;
+
+class UserMainCode {
+
+	public static boolean checkPassword(String password) {
+
+		// valid password should satisfy following rules
+		// minimum 8 char length
+		// should have one lower case , one upper case , one digit and one special
+		// character
+		boolean status = false;  
+	}
+}
+
+public class PasswordValidation {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter password");
+		String password = sc.next();
+		boolean checkPassword = UserMainCode.checkPassword(password);
+		if (checkPassword) {
+			System.out.println("Valid Password");
+		} else {
+			System.out.println("Invalid Password");
+		}
+
+	}
+}

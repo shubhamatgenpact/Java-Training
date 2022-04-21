@@ -1,0 +1,7 @@
+
+public class NotEligibleForScheme extends RuntimeException {
+
+	public NotEligibleForScheme(String exceptionName) {
+		super(exceptionName);
+	}
+}

@@ -1,0 +1,58 @@
+package Assesment;
+
+import java.util.List;
+
+class State implements Comparable<Country> {
+	String state;
+
+	public State(String state) {
+		this.state = state;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	@Override
+	public int compareTo(Country o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}
+
+class Country {
+	String countryName;
+	List<State> stateList;
+
+	public Country(String countryName, List<State> stateList) {
+		super();
+		this.countryName = countryName;
+		this.stateList = stateList;
+	}
+
+	public String getName() {
+		return countryName;
+	}
+
+	public void setName(String countryName) {
+		this.countryName = countryName;
+	}
+
+	public List<State> getStateList() {
+		return stateList;
+	}
+
+	public void setStateList(List<State> stateList) {
+		this.stateList = stateList;
+	}
+
+}
+
+public class DisplayState {
+
+}

@@ -1,0 +1,21 @@
+package Multithreading;
+
+public class ThreadJoin implements Runnable {
+
+	@Override
+	public void run() {
+		
+	}
+
+	public static void main(String[] args) throws InterruptedException {
+			ThreadJoin threadJoin = new ThreadJoin();
+			Thread thread = new Thread();
+			
+			thread.start();
+			
+			
+			thread.join(1000);
+			
+	}
+
+}

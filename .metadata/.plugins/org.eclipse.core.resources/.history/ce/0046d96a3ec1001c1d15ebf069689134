@@ -1,0 +1,24 @@
+package Multithreading;
+
+
+class MyClass implements Runnable{
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		Thread thread  = Thread.currentThread();
+		System.out.println("Thread Started = "+thread.getName());
+		
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+}
+public class JoinThread {
+
+}

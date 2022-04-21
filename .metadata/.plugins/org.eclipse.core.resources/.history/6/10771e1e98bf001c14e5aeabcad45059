@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class App {
+
+	public static void trimAllString(List<String> list) {
+		
+//		List<String> trimmedStrings = new ArrayList<String>();
+//		for(String s : list) {
+//		  trimmedStrings.add(s.trim());
+//		}
+//
+//		list = trimmedStrings;
+//
+//		
+		
+		for(int i=0 ; i<list.size();i++) {
+			list.add(i, list.get(i).trim()); 
+		}
+		
+		System.out.println(list);
+	}
+
+	public static void main(String[] args) {
+		List<String> aList = new ArrayList<String>();
+		aList.add(" shubham    ");
+		aList.add("  nigam  ");
+		aList.add(" Java is BEST  ");
+
+		App.trimAllString(aList);
+
+	}
+}

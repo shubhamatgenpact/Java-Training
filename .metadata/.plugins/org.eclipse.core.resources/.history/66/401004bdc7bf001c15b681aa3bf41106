@@ -1,0 +1,18 @@
+package Assesment;
+
+
+class State{
+	String state;
+	
+	public State(String state) {
+		this.state = state;
+	}
+}
+class Country{
+	String name;
+	String 
+}
+
+public class DisplayState {
+
+}

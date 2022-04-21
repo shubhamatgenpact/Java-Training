@@ -1,0 +1,22 @@
+package ExceptionHandling;
+
+public class NestedDemo {
+
+	private void process(int num) {
+		try {
+			try {
+				if (num > 7) {
+					throw new IllegalArgumentException("number should not be greater than 7")
+				}
+			} catch (Exception e) {
+
+			}
+		} catch (Exception e) {
+
+		}
+	}
+
+	public static void main(String[] args) {
+
+	}
+}

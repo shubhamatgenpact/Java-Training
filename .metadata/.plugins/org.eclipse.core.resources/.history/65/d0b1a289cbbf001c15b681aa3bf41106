@@ -1,0 +1,87 @@
+package Assesment;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+class Contact {
+	String name;
+	String email;
+	String mobile;
+	String address;
+
+	public Contact(String name, String email, String mobile, String address) {
+		super();
+		this.name = name;
+		this.email = email;
+		this.mobile = mobile;
+		this.address = address;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getMobile() {
+		return mobile;
+	}
+
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	@Override
+	public String toString() {
+		return "Contact [name=" + name + ", email=" + email + ", mobile=" + mobile + ", address=" + address + "]";
+	}
+
+}
+
+public class ContactInfo {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		ArrayList<Contact> aList = new ArrayList<Contact>();
+
+		System.out.println("Enter number of input");
+		int n = sc.nextInt();
+
+		while (n-- > 0) {
+			System.out.println("Enter name");
+			String name = sc.next();
+			
+			System.out.println("Enter email");
+			String email = sc.next();
+			
+			System.out.println("Enter mobile");
+			String mobile = sc.next();
+			
+			System.out.println("Enter address");
+			String address = sc.next();
+			
+			Contact contact = new Contact(name, email, mobile, address);
+			
+			aList.add(contact);
+		}
+
+		
+	}
+}

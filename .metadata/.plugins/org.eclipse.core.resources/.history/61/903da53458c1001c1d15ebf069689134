@@ -1,0 +1,24 @@
+package Multithreading;
+
+
+class MyThread implements Runnable{
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		System.out.println("Parent Thread");
+	}
+	
+}
+public class Thread {
+	public static void main(String[] args) {
+		
+		MyThread m1 = new MyThread();
+		
+		Thread t1 = new Thread();
+		
+		
+		
+		
+	}
+}

@@ -1,0 +1,15 @@
+package Multithreading;
+
+
+class Demo{
+	void display(Demo d1) {
+		System.out.println("Thread 1 waiting for thread 2 to release lock");
+		
+		synchronized (d1) {
+			System.out.println("Deadlock Occured");
+		}
+	}
+}
+public class Deadlock {
+
+}

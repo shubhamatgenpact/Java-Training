@@ -1,0 +1,64 @@
+import java.util.Comparator;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
+import java.util.stream.Collectors;
+
+class EmployeeData {
+	int empId;
+	String empName;
+	int empExp;
+
+	public EmployeeData(int empId, String empName, int empExp) {
+		super();
+		this.empId = empId;
+		this.empName = empName;
+		this.empExp = empExp;
+	}
+
+	public int getEmpId() {
+		return empId;
+	}
+
+	public void setEmpId(int empId) {
+		this.empId = empId;
+	}
+
+	public String getEmpName() {
+		return empName;
+	}
+
+	public void setEmpName(String empName) {
+		this.empName = empName;
+	}
+
+	public int getEmpExp() {
+		return empExp;
+	}
+
+	public void setEmpExp(int empExp) {
+		this.empExp = empExp;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [empId=" + empId + ", empName=" + empName + ", empExp=" + empExp + "]";
+	}
+
+}
+
+public class Employee {
+
+	public static void main(String[] args) {
+		HashSet<EmployeeData> hashSet = new HashSet<EmployeeData>();
+
+		hashSet.add(new EmployeeData(101, "Shubham", 8));
+		hashSet.add(new EmployeeData(102, "Pankaj", 4));
+		hashSet.add(new EmployeeData(103, "Ram", 10));
+
+		
+		TreeSet<EmployeeData> tSet = new TreeSet<EmployeeData>(hashSet);
+		System.out.println(tSet);
+	}
+
+}

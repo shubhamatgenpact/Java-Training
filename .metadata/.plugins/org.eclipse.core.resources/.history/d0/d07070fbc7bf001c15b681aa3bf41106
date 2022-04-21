@@ -1,0 +1,53 @@
+package Assesment;
+
+import java.util.List;
+
+class State{
+	String state;
+	
+	public State(String state) {
+		this.state = state;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+	
+	
+}
+class Country{
+	String countryName;
+	List<State> stateList;
+	
+	public Country(String countryName, List<State> stateList) {
+		super();
+		this.countryName = countryName;
+		this.stateList = stateList;
+	}
+
+	public String getName() {
+		return countryName;
+	}
+
+	public void setName(String name) {
+		this.countryName = name;
+	}
+
+	public List<State> getStateList() {
+		return stateList;
+	}
+
+	public void setStateList(List<State> stateList) {
+		this.stateList = stateList;
+	}
+	
+	
+}
+
+public class DisplayState {
+	
+}

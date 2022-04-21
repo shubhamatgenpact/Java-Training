@@ -1,0 +1,26 @@
+
+/*
+parent class child class new child class and method hiding we have to do 
+2 non static
+1 static 1 
+instance variable
+*/
+
+class Parent {
+	public void nonStatic1() {
+		
+	}
+	public void nonStatic2() {
+		
+	}
+}
+
+class Child extends Parent {
+
+}
+
+public class HandsOn {
+	public static void main(String[] args) {
+
+	}
+}
